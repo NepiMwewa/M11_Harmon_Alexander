@@ -8,17 +8,35 @@
 		font-size: 60px;
 		text-align: center;
 		color: #1b998b;
+		text-shadow: 2px 2px 4px black;
+
+	 	position: relative;
+		animation-name: h1Drop;
+		animation-duration: 1.5s;
 	}
+
+	/*h1 animation*/
+	@keyframes h1Drop {
+		0% {
+			top: -90px;
+		}
+		100% {
+			top: 0px;
+		}
+	}
+
 	h2{
 		font-size: 32px;
 		text-align: center;
 		color: #1b998b;
+		text-shadow: 1px 1px 2px black;
 	}
 	h3{
 		margin-top: 12px;
 		font-size: 24px;
 		text-align: center;
 		color: #1b998b;
+		text-shadow: 1px 1px 1px black;
 	}
 	h4{
 		margin-top: 0px;
@@ -76,7 +94,25 @@
 		margin-bottom: 60px;
 		float: left;
 		width: 700px;
+	 	position: relative;
+		animation-name: artictleRise;
+		animation-duration: 2s;
+		animation-delay: 1.5s;
+		animation-fill-mode: both;
 	}
+
+	/*artictle animation*/
+	@keyframes artictleRise {
+		0% {
+			opacity: 0;
+			bottom: -700px;
+		}
+		100% {
+			opacity: 1;
+			bottom: 0px;
+		}
+	}
+
 	article>p{
 		margin-top: 10px;
 	}
@@ -91,6 +127,26 @@
 		width: 300px;
 		float: right;
 		border-style: solid;
+		border-radius: 15px;
+
+		position: relative;
+		animation-name: sideSlide;
+		animation-duration: 2s;
+		animation-delay: 1.5s;
+		animation-fill-mode: both;
+	}
+
+
+	/*artictle animation*/
+	@keyframes sideSlide {
+		0% {
+			opacity: 0;
+			right: -400px;
+		}
+		100% {
+			opacity: 1;
+			right: 0px;
+		}
 	}
 
 	figure{
@@ -103,9 +159,13 @@
 
 	#photoStudio{
 		width: 100%;
+		box-shadow: 0 5px 10px 0 black;
+		border-radius: 25px;
 	}
 	.asidePhoto{
 		width: 100%;
+		box-shadow: 0 5px 10px 0 black;
+		border-radius: 15px;
 	}
 	/*End of page content styles*/
 
