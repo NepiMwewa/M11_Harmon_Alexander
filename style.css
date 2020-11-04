@@ -1,0 +1,222 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  min-width: 400px;
+}
+h1{
+  margin: 1.2rem;
+  font-size: 3.5rem;
+  font-family: cursive;
+  text-align: center;
+  color: pink;
+}
+h2{
+  font-size: 2.2rem;
+  font-family: cursive;
+  text-align: center;
+  color: pink;
+}
+p{
+  font-size: 1.5rem;
+}
+
+/*Start of Navagation styles*/
+nav{
+  background-color: pink;
+}
+nav>ul{
+	list-style-type: none;
+	padding: 2rem 0px 2rem 0px;
+	margin: auto;
+  text-align: center;
+	overflow: hidden;
+}
+nav>ul>li{
+  display: inline;
+  color: white;
+  padding: 5%;
+}
+a{
+
+  text-decoration: underline;
+  font-family: sans-serif;
+  font-size: 2rem;
+}
+a:link{
+  color: white;
+}
+a:visited{
+  color: white;
+}
+/*End of Navagation styles*/
+
+/*Start of main article*/
+article{
+  margin: 0px;
+  padding: 0px;
+}
+article>figure{
+  margin: 0px;
+  margin-left: 7%;
+  margin-right: 7%;
+  width: auto;
+  min-width: 400px;
+}
+figcaption{
+  display: none;
+}
+#banner-img{
+  width: 100%;
+}
+article>p{
+  margin-left: 3%;
+  margin-right: 3%;
+  text-align: center;
+}
+/*End of main article*/
+
+/*Start of section*/
+section{
+width: 85%;
+margin: 5%;
+margin-left: auto;
+margin-right: auto;
+}
+section>article{
+  min-width: 400px;
+  margin: 1rem;
+}
+section>article>figure{
+  margin: 0;
+  width: auto;
+  min-width: 400px;
+}
+.cake-images{
+  width: 100%;
+}
+/*End of section*/
+
+.clear{
+  clear: left;
+}
+
+/*Start of footer*/
+footer{
+
+  background-color: pink;
+  margin: auto;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+footer>ul{
+  list-style-type: none;
+  width: 80%;
+  margin: auto;
+  padding: 0px;
+  text-align: center;
+}
+footer>ul>li{
+
+  font-size: 2rem;
+  border-left: white solid 2px;
+  border-right: white solid 2px;
+  text-align: center;
+  color: white;
+  margin: 5% auto 5% auto;
+}
+/*End of footer*/
+
+/*Start of tablet code*/
+@media (min-width: 768px) and (max-width: 1023px){
+h1{
+  font-size: 3rem;
+}
+h2{
+  font-size: 2rem;
+}
+p{
+  font-size: 1.3rem;
+}
+
+nav>ul{
+	padding: 1.5rem 0px 1.5rem 0px;
+}
+a{
+font-size: 1.5rem;
+}
+
+footer>ul>li{
+  font-size: 1.5rem;
+}
+/*End of tablet code*/
+
+/*Start of desktop code*/
+}
+@media (min-width: 1024px){
+  h1{
+    font-size: 2.5rem;
+  }
+
+  h2{
+    font-size: 1.7rem;
+  }
+  p{
+    font-size: 1.3rem;
+  }
+
+  /*Start of Navagation styles*/
+  nav>ul{
+  	padding: 1.5rem 0px 1.5rem 0px;
+  }
+  nav>ul>li{
+    padding: 1rem;
+  }
+  a{
+  font-size: 1rem;
+  }
+  /*End of Navagation styles*/
+
+  /*Start of Section*/
+  section{
+    width: 85%;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  section>article{
+    float: left;
+    width: 20%;
+    min-width: 400px;
+    margin: auto;
+    padding: 2%;
+  }
+  section>article>figure{
+    margin: 0;
+    width: auto;
+    min-width: 400px;
+  }
+  .cake-images{
+    width: 100%;
+  }
+  /*End of Section*/
+
+  /*Start of Footer styles*/
+  footer{
+    float: left;
+    width: 100%;
+  }
+  footer>ul{
+    list-style-type: none;
+    width: 1000px;
+  }
+  footer>ul>li{
+    float: left;
+    font-size: 1rem;
+    margin: 1rem 2px 1rem 2px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  /*End of Footer styles*/
+
+}
+/*End of desktop code*/
